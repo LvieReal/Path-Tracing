@@ -1,0 +1,45 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/src/**",
+                "${MINGW64_PATH}/include/**",
+                "${VK_SDK_PATH}/Include/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "WIN32_LEAN_AND_MEAN",
+                "NOMINMAX",
+                "GLFW_INCLUDE_NONE=1"
+            ],
+            "windowsSdkVersion": "10.0.26100.0",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerPath": "C:/msys64/mingw64/bin/gcc.exe",
+            "cStandard": "c23",
+            "cppStandard": "c++23"
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/src/**",
+                "/usr/include/**",
+                "/usr/include/x86_64-linux-gnu/**"
+            ],
+            "defines": [
+                "GLFW_INCLUDE_NONE=1",
+                "VV_WINDOW_BACKEND_X11=1",
+                "VV_WINDOW_BACKEND_WAYLAND=1"
+            ],
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c23",
+            "cppStandard": "c++23"
+        }
+    ],
+    "version": 4
+}

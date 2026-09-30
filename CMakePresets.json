@@ -1,0 +1,31 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "Main",
+            "displayName": "GCC 15.2.0 x86_64-w64-mingw32 (mingw64)",
+            "description": "Using compilers: C = C:\\msys64\\mingw64\\bin\\gcc.exe, CXX = C:\\msys64\\mingw64\\bin\\g++.exe",
+            "generator": "MinGW Makefiles",
+            "binaryDir": "${sourceDir}/build",
+            "environment": {
+                "PATH": "C:/msys64/mingw64/bin;$penv{PATH}"
+            },
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/install",
+                "CMAKE_C_COMPILER": "C:/msys64/mingw64/bin/gcc.exe",
+                "CMAKE_CXX_COMPILER": "C:/msys64/mingw64/bin/g++.exe",
+                "CMAKE_MAKE_PROGRAM": "C:/msys64/mingw64/bin/mingw32-make.exe",
+                "CMAKE_PREFIX_PATH": "C:/msys64/mingw64",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Main",
+            "configurePreset": "Main",
+            "inheritConfigureEnvironment": true,
+            "jobs": 8
+        }
+    ]
+}
